@@ -1,0 +1,115 @@
+
+#
+#  ██╗     ██╗   ██╗     ██████╗ █████╗ ███████╗███████╗
+#  ██║     ██║   ██║    ██╔════╝██╔══██╗██╔════╝██╔════╝
+#  ██║     ██║   ██║    ██║     ███████║███████╗█████╗
+#  ██║     ╚██╗ ██╔╝    ██║     ██╔══██║╚════██║██╔══╝
+#  ███████╗ ╚████╔╝     ╚██████╗██║  ██║███████║███████╗
+#  ╚══════╝  ╚═══╝       ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝
+#
+#  codded by qurwan (ds) for Livermorium Project
+#         https://discord.gg/gR4KQYz2vV
+#
+
+key: ""
+
+already-open: "&x&f&b&9&2&0&7&l▶ &fИгрок &x&4&6&c&f&f&c{player}&f уже открывает кейс"
+case-location: "-23;88;-43;spawn"
+
+menu:
+  title: "Кейсы"
+  size: 6
+
+cases:
+  donate:
+    display: "&x&f&f&4&3&0&0К&x&f&f&4&d&0&0е&x&f&f&5&6&0&0й&x&f&f&6&0&0&0с &x&f&f&6&a&0&0с &x&f&f&7&4&0&0д&x&f&f&7&d&0&0о&x&f&f&8&7&0&0н&x&f&f&9&1&0&0а&x&f&f&9&b&0&0т&x&f&f&a&4&0&0о&x&f&f&a&e&0&0м"
+    default-item: LEATHER_CHESTPLATE
+
+    # Для разделения строк ';'
+    title: " ;&cВыбери сундук!"
+
+    # Все типы: CHEST, CREEPER, COBBLESTONE
+    open-type: CHEST
+
+    drops:
+      '&3Аспид &9[30 дней]':
+        - "[command] lp user {player} parent addtemp aspid 30d"
+      '&4&lКнязь &c[30 дней]':
+        - "[command] lp user {player} parent addtemp knyaz 30d"
+        - "[item] DIAMOND_CHESTPLATE"
+      '&5&lЭлита &d[30 дней]':
+        - "[command] lp user {player} parent addtemp elite 30d"
+      '&6&lГлава &e[30 дней]':
+        - "[command] lp user {player} parent addtemp glava 30d"
+      '&9&lБарон &c[30 дней]':
+        - "[command] lp user {player} parent addtemp baron 30d"
+      '&aГерой &2[30 дней]':
+        - "[command] lp user {player} parent addtemp hero 30d"
+      '&b&lПринц &9[30 дней]':
+        - "[command] lp user {player} parent addtemp princ 30d"
+        - "[item] GOLDEN_CHESTPLATE"
+      '&bСквид &3[30 дней]':
+        - "[command] lp user {player} parent addtemp squid 30d"
+      '&c&lТитан &4[30 дней]':
+        - "[command] lp user {player} parent addtemp titan 30d"
+        - "[item] IRON_CHESTPLATE"
+      '&eСтраж &6[30 дней]':
+        - "[command] lp user {player} parent addtemp strazh 30d"
+      '&3Аспид &9[90 дней]':
+        - "[command] lp user {player} parent addtemp aspid 90d"
+      '&4&lКнязь &c[90 дней]':
+        - "[command] lp user {player} parent addtemp aspid 90d"
+        - "[item] DIAMOND_CHESTPLATE"
+      '&5&lЭлита &d[90 дней]':
+        - "[command] lp user {player} parent addtemp aspid 90d"
+      '&6&lГлава &e[90 дней]':
+        - "[command] lp user {player} parent addtemp aspid 90d"
+      '&9&lБарон &c[90 дней]':
+        - "[command] lp user {player} parent addtemp aspid 90d"
+      '&aГерой &2[90 дней]':
+        - "[command] lp user {player} parent addtemp aspid 90d"
+      '&b&lПринц &9[90 дней]':
+        - "[command] lp user {player} parent addtemp aspid 90d"
+        - "[item] GOLDEN_CHESTPLATE"
+      '&bСквид &3[90 дней]':
+        - "[command] lp user {player} parent addtemp aspid 90d"
+      '&c&lТитан &4[90 дней]':
+        - "[command] lp user {player} parent addtemp aspid 90d"
+        - "[item] IRON_CHESTPLATE"
+      '&eСтраж &6[90 дней]':
+        - "[command] lp user {player} parent addtemp aspid 90d"
+      '&3Аспид &9[Навсегда]':
+        - "[command] lp user {player} parent addtemp aspid 90d"
+  money:
+    display: "&x&d&5&b&d&0&0К&x&d&6&c&0&0&0е&x&d&8&c&2&0&0й&x&d&9&c&5&0&0с &x&d&a&c&7&0&0с &x&d&c&c&a&0&0м&x&d&d&c&d&0&0о&x&d&e&c&f&0&0н&x&d&f&d&2&0&0е&x&e&1&d&5&0&0т&x&e&2&d&7&0&0к&x&e&3&d&a&0&0а&x&e&5&d&c&0&0м&x&e&6&d&f&0&0и"
+    default-item: GOLD_NUGGET
+    title: " ;&cВыбери сундук!"
+    open-type: CHEST
+    drops:
+      '&e$25,000 монет':
+        - "[command] money give {player} 25000"
+      '&e$45,000 монет':
+        - "[command] money give {player} 45000"
+      '&e$32.00 монет':
+        - "[command] money give {player} 32.000"
+      '&e$42,500 монет':
+        - "[command] money give {player} 42500"
+      '&e$47,500 монет':
+        - "[command] money give {player} 47500"
+      '&e$50,000 монет':
+        - "[command] money give {player} 50000"
+        - "[item] GOLD_INGOT"
+      '&e$75,000 монет':
+        - "[command] money give {player} 75000"
+        - "[item] GOLD_INGOT"
+      '&e$100,000 монет':
+        - "[command] money give {player} 100000"
+        - "[item] GOLD_BLOCK"
+  titul:
+    display: "&x&f&8&0&0&e&5К&x&f&8&0&0&d&fе&x&f&8&0&0&d&9й&x&f&8&0&0&d&3с &x&f&7&0&0&c&dс &x&f&7&0&0&c&7т&x&f&7&0&0&c&2и&x&f&7&0&0&b&cт&x&f&7&0&0&b&6у&x&f&7&0&0&b&0л&x&f&6&0&0&a&aа&x&f&6&0&0&a&4м&x&f&6&0&0&9&eи"
+    default-item: YELLOW_DYE
+    title: " ;&cВыбери сундук!"
+    open-type: CHEST
+    drops:
+      '&cLivermorium Project':
+        - "[permission] titul.1"
